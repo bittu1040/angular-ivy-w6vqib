@@ -1,0 +1,35 @@
+table {
+  margin: 0 auto;
+  background-color: #71714c;
+  border-collapse: collapse;
+  color: whitesmoke;
+}
+
+th {
+  padding: 0.5em;
+}
+
+td {
+  background-color: whitesmoke;
+  color: #71714c;
+}
+
+th.hot {
+  background-color: #8a648b;
+}
+
+td.hot {
+  color: #8a648b;
+}
+
+th.cold {
+  background-color: #4f7676;
+}
+
+td.cold {
+  color: #4f7676;
+}
+
+td {
+  padding: 0.3em 1em;
+}

@@ -1,0 +1,36 @@
+<h1>Pokemon</h1>
+
+<table>
+  <thead>
+    <th>Fetched By</th>
+    <th>Name</th>
+    <th>Sprites <span style="font-weight: normal;">(front and back)</span></th>
+  </thead>
+  <tbody>
+    <tr *ngIf="(bulbasaur$ | async) as bulbasaur">
+      <td>HttpClient</td>
+      <td>Bulbasaur</td>
+      <td>
+      <img [src]="bulbasaur.sprites.front_default" alt="" width="60" height="60">
+        <img [src]="bulbasaur.sprites.back_default" alt="" width="60" height="60">
+      </td>
+    </tr>
+
+    <tr *ngIf="(pikachu$ | async) as pikachu">
+      <td>Our Observalbe</td>
+      <td>Pikachu</td>
+      <td>
+        <img [src]="pikachu?.sprites.front_default" alt="" width="60" height="60">
+        <img [src]="pikachu?.sprites.back_default" alt="" width="60" height="60">
+      </td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+<!-- <ng-template #loading>
+  <p>Loading pokemon...</p>
+  <app-spinner></app-spinner>
+</ng-template> -->

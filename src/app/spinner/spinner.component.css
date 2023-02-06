@@ -1,0 +1,55 @@
+.spinner-container {
+  margin: 2em auto;
+  position: relative;
+  background-color: rebeccapurple;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.one {
+  position: absolute;
+  background-color: crimson;
+  animation: orbit 2.5s linear infinite;
+}
+
+.two {
+  position: absolute;
+  z-index: -1;
+  background-color: orange;
+  animation: orbit 2.5s linear 500ms infinite;
+}
+
+.three {
+  position: absolute;
+  z-index: -1;
+  background-color: gold;
+  animation: orbit 2.5s linear 1s infinite;
+}
+
+.four {
+  position: absolute;
+  z-index: -1;
+  background-color: green;
+  animation: orbit 2.5s linear 1.5s infinite;
+}
+
+.five {
+  position: absolute;
+  z-index: -1;
+  background-color: aqua;
+  animation: orbit 2.5s linear 2s infinite;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(20px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(20px);
+  }
+}
+

@@ -1,0 +1,25 @@
+table {
+  border-spacing: 1px;
+}
+
+td, th {
+  padding: 0.5em;
+  color: whitesmoke;
+  text-align: left;
+}
+th {
+  background-color: var(--colour-olive);
+}
+td {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+tr:nth-child(odd) {
+  background-color: var(--colour-pink);
+  border: 1px solid whitesmoke
+}
+
+tr:nth-child(even) {
+  background-color: var(--colour-green);
+}

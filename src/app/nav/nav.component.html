@@ -1,0 +1,22 @@
+<nav>
+<div class="menu" (click)="toggleMenu()">
+<span href="#">Menu</span><span class="fas fa-bars"></span>
+</div>
+  <ul class="flex-container">
+    <li [ngClass]="menuClass">
+      <a routerLink="geolocation" routerLinkActive="active">Geolocation</a>
+    </li>
+    <li [ngClass]="menuClass">
+      <a routerLink="pokemon" routerLinkActive="active">Pokemon</a>
+    </li>
+    <li [ngClass]="menuClass">
+      <a routerLink="timer" routerLinkActive="active">Pomodoro</a>
+    </li>
+    <li [ngClass]="menuClass">
+      <a routerLink="random-number" routerLinkActive="active">Random Number</a>
+    </li>
+    <li [ngClass]="menuClass">
+      <a routerLink="vowels" routerLinkActive="active">Vowels</a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,17 @@
+table {
+  border-spacing: 1px;
+  color: whitesmoke;
+  background-color: whitesmoke;
+}
+
+th, td {
+  padding: 1em;
+}
+
+.latitude {
+  background-color: #8a648b;
+}
+
+.longitude {
+  background-color: #4f7676;
+}

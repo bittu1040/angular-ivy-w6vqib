@@ -1,0 +1,37 @@
+<h1>Hot vs Cold Observables</h1>
+<table>
+  <thead>
+    <th>Subscription</th>
+    <th class="hot">Hot</th>
+    <th class="cold">Cold</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td class="hot">{{ randomNumberHot$ | async }}</td>
+      <td class="cold">{{ randomNumberCold$ | async }}</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="hot">{{ randomNumberHot$ | async }}</td>
+      <td class="cold">{{ randomNumberCold$ | async }}</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="hot">{{ randomNumberHot$ | async }}</td>
+      <td class="cold">{{ randomNumberCold$ | async }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <section id="explanation">
+  <h2>Explanation:</h2>
+<p>
+The component has a data property called 'random' that stores the value returned by Math.random():
+{{ random }}
+</p>
+
+<p>randomNumberHot$ is a <b>Hot Observable </b>that emits the value stored in the 'random' data property. Therefore, all subscriptions to randomNumberHot$ receive the same random number ({{ randomNumberHot$ | async }}).</p>
+
+<p>Whereas, randomNumberCold$ is a <b>Cold Observable</b> that generates a unique random number for each subscription.</p>
+</section> -->

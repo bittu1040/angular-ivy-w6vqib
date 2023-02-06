@@ -1,0 +1,9 @@
+<h2>Vowels</h2>
+
+<p>
+  <span *ngFor="let vowel of (ourVowels$ | async) let isLast=last">
+    {{vowel}} 
+    <span *ngIf="!isLast">, </span>
+  </span>
+  
+</p>

@@ -1,0 +1,36 @@
+<h1>Geolocation</h1>
+
+<div *appDeclareVar="myLocation$ | async as position">
+  <ng-container
+    *ngTemplateOutlet="
+      position?.coords ? location 
+      : position?.error ? error
+      : loading;
+      context: { $implicit: position }
+    ">
+  </ng-container>
+</div>
+
+<ng-template #location let-position>
+  <table>
+    <thead>
+      <th class="latitude">Latitude</th>
+      <th class="longitude">Longitude</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="latitude">{{ position.coords.latitude }}</td>
+        <td class="longitude">{{ position.coords.longitude }}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #error let-position>
+  <p>{{ position?.error.message }}.</p>
+</ng-template>
+
+<ng-template #loading>
+  <p>Getting your location...</p>
+  <app-spinner></app-spinner>
+</ng-template>

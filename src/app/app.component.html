@@ -1,0 +1,16 @@
+<header>
+  <h1>Creating Observables</h1>
+  <h2>Demo</h2>
+  <nav>
+    <app-nav></app-nav>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+  <app-spinner *ngIf="loading$ | async as loading"></app-spinner>
+</main>
+
+<footer>
+
+</footer>
